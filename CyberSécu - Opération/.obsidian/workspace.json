@@ -57,7 +57,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Whois",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,11 +74,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "641c1e50995d27f8",
@@ -157,6 +158,10 @@
   },
   "active": "bdba581163f596b5",
   "lastOpenFiles": [
+    "Pasted image 20230601192459.png",
+    "Pasted image 20230601192240.png",
+    "Pasted image 20230601192133.png",
+    "Pasted image 20230601112145.png",
     "Pasted image 20230531134527.png",
     "Pasted image 20230531134451.png",
     "Pasted image 20230531110629.png",
@@ -164,9 +169,7 @@
     "Pasted image 20230531101657.png",
     "Pasted image 20230530145917.png",
     "Pasted image 20230530145526.png",
-    "Pasted image 20230530145045.png",
     "Untitled.md",
-    "Prise de note.md",
-    "Pasted image 20230530144602.png"
+    "Prise de note.md"
   ]
 }

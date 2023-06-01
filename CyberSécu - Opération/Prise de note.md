@@ -1,11 +1,11 @@
 # Le danger
 Le danger n'est pas forcément lié à une attaque, on peut y êrtre exposé depuis l'intérieur.
 
-Un risque est un potentiellement évènement pouvant provoquer des dégats.
+Un risque est un potentiellement évènement pouvant provoquer des dégâts et/ou des effets indésirables sur la victime.
 - La gravité du risque. (endommagement de l'endroit visée)
 - La fréquence du risque. (% de chance que le risque se produise)
 
-Un risque fort avec une probabilité faible sera mojns bien classé qu'un risque fort avec une probabilité forte.
+Un risque fort avec une probabilité faible sera moins bien classé qu'un risque fort avec une probabilité forte.
 
 Le danger en cybersécurité fait référence aux menaces et aux risques potentiels liés à l'utilisation des technologies de l'information et de la communication (TIC). Il englobe les actions malveillantes ou les événements indésirables qui peuvent compromettre la confidentialité, l'intégrité ou la disponibilité des données, des systèmes informatiques et des réseaux.
 
@@ -144,6 +144,11 @@ Metasploit est un outil puissant, mais il est important de souligner qu'il doit 
 -   PSI comprend les noms d'utilisateur, mots de passe et autres informations liées à la sécurité que les personnes utilisent pour accéder à des informations ou à des services sur le réseau.​
 
 # Composition d'un centre opérationnel de sécurité (S.O.C)​
+Le **Security Operations center**, **SOC**, désigne dans une entreprise l’équipe en charge d’assurer la sécurité de l’information.
+
+Le SOC est une plateforme permettant la supervision et l’administration de la sécurité du système d'information au travers d’[outils de collecte](https://www.oracle.com/fr/cloud/siem-gestion-evenements-securite.html), de corrélation d'événements et d'intervention à distance. Le [SIEM (Security Information Event Management)](https://www.oracle.com/fr/cloud/siem-gestion-evenements-securite.html) est l'outil principal du SOC puisqu'il permet de gérer les évènements d'un SI.
+
+L’objectif d’un SOC est de détecter, analyser et remédier aux incidents de cybersécurité à l’aide de solutions technologiques et d’un ensemble de démarches. Ils surveillent et analysent l'activité sur les réseaux, les serveurs, les terminaux, les [bases de données](https://www.oracle.com/fr/database/definition-base-de-donnees.html), les applications, les sites Web et autres systèmes, à la recherche de signaux faibles ou de comportements anormaux qui pourraient être le signe d'un incident ou d'un compromis en matière de sécurité. Le SOC doit veiller à ce que les incidents de sécurité potentiels soient correctement identifiés, analysés, défendus, enquêtés et signalés. Les SOC sont composés, en général, d’analystes et d’ingénieurs en sécurité, ainsi que de managers supervisant les opérations de sécurité. Les capacités supplémentaires de certains SOC peuvent inclure l'analyse avancée, la cryptanalyse et l'ingénierie inverse des [logiciels malveillants](https://www.oracle.com/fr/cloud/malware-logiciel-malveillant.html) pour analyser les incidents. Les équipes SOC travaillent étroitement avec les équipes d’intervention afin de s’assurer que le problème de sécurité soit bien réglé une fois qu’il a été découvert.
 
 -   Pour utiliser une approche formalisée, structurée et disciplinée pour se défendre contre les cybermenaces, les organisations utilisent généralement les services de professionnels d'un Éléments d'un centre opérationnel de sécurité (SOC). ​
     
@@ -211,6 +216,9 @@ En résumé, un IDS est un système de détection qui alerte les administrateurs
     
 9. MAN (Metropolitan Area Network) : Un MAN est un réseau métropolitain qui couvre une région géographique plus large qu'un LAN, mais plus petite qu'un WAN. Il peut couvrir une ville entière ou une zone urbaine étendue. Les MAN sont souvent utilisés pour connecter plusieurs réseaux locaux (LAN) situés dans différentes parties d'une ville.
 10. FTP (File Transfer Protocol) : FTP est un protocole de transfert de fichiers largement utilisé sur les réseaux informatiques. Il permet de transférer des fichiers entre un client et un serveur FTP. Le client peut envoyer des fichiers vers le serveur (téléchargement) ou récupérer des fichiers depuis le serveur (téléversement).
+
+![[Pasted image 20230601192459.png]]
+
     
 12. STP (Spanning Tree Protocol) : STP est un protocole de réseau utilisé pour éviter les boucles dans les réseaux Ethernet. Il permet de créer une topologie d'arbre sans boucle en désactivant sélectivement certains liens pour assurer une connectivité sans faille tout en évitant les boucles.
     
@@ -312,7 +320,7 @@ Ces protocoles réseau sont essentiels pour assurer une communication efficace e
 ## Modèle OSI
 
 ![[Pasted image 20230531134451.png]]
-
+OSI / TCP/IP
 ![[Pasted image 20230531134527.png]]
 
 ## Email
@@ -346,3 +354,118 @@ REST favorise l'utilisation de l'architecture client-serveur, où les clients (a
 En résumé, HTTP est le protocole de communication de base pour transférer des données sur le Web, HTTPS ajoute une couche de sécurité en cryptant les données, et REST est un style d'architecture pour concevoir des services Web basé sur l'utilisation de ressources et d'opérations standardisées.
 
 ::1/128 = 127.0.0.0/8
+
+# Attaque et outils
+
+Une menace est un danger potentiel pour une ressource.
+
+![[Pasted image 20230601112145.png]]
+
+## PCA
+Un plan de continuité des activités (PCA) est un document qui définit les procédures et les mesures à mettre en place pour garantir la continuité des opérations d'une organisation en cas de perturbations majeures. Le PCA vise à minimiser les interruptions des activités critiques et à assurer la reprise rapide des opérations normales après un incident.
+## RPO
+Un Recovery Point Objective (RPO), également appelé "Objectif de Point de Récupération Opérationnelle" en français, est un concept utilisé dans la planification de la reprise après sinistre et la gestion de la continuité des activités.
+
+Le RPO définit la période de temps maximale pendant laquelle les données peuvent être perdues suite à un incident ou une interruption des activités. En d'autres termes, il indique jusqu'à quel point dans le temps une organisation est prête à accepter la perte de données en cas de sinistre.
+
+Par exemple, si le RPO est fixé à une heure, cela signifie que l'organisation est prête à accepter une perte de données maximale d'une heure en cas de sinistre. Si une interruption survient, les données enregistrées avant l'heure spécifiée par le RPO seront récupérées et les données enregistrées après cette heure peuvent être perdues.
+
+Le choix du RPO dépend des besoins spécifiques de l'organisation et des activités qu'elle mène. Les organisations dont les données sont critiques, comme les institutions financières ou les services de santé, peuvent avoir un RPO très faible, voire nul, pour minimiser la perte de données. D'autres organisations, dont les données sont moins sensibles ou qui ont des capacités de sauvegarde plus limitées, peuvent accepter un RPO plus élevé.
+
+Il est important de noter que le RPO est étroitement lié à la fréquence des sauvegardes et des mécanismes de protection des données. Pour respecter le RPO défini, il est nécessaire de mettre en place des procédures régulières de sauvegarde et de réplication des données, ainsi que des mécanismes de stockage sécurisé pour éviter la perte de données en cas de sinistre.
+
+### Logiciel
+John The Ripper ou ophcrack
+
+*airckack* *airdom*
+
+Nmap est un scanner de ports libre créé par Fyodor et distribué par Insecure.org
+
+SKIPFISH – UN SCANNER DE VULNÉRABILITÉ POUR LES SITES WEB DÉVELOPPÉ PAR GOOGLE
+
+## Types d'attaques
+- Attaque de mot de passe
+- Attaque par déni de service (+ facile d'accès quand le système tombe)
+- Attaque de l'homme au milieu
+- Compromissions des clés
+- Attaque de renifleur
+
+
+Si le souhbait est de eprturber = activiste
+Si le souhait ets de garder l'accès = porte dérobé, rootkit..... Il faut être discret
+
+## Malware
+  
+Un malware est un terme qui fait référence à un logiciel malveillant, c'est-à-dire un programme informatique conçu dans le but de causer des dommages, de compromettre la sécurité ou de perturber le fonctionnement d'un système informatique, d'un réseau ou d'un appareil.
+
+Le terme "malware" est une contraction de "malicious software" (logiciel malveillant en français) et englobe différents types de programmes malveillants, tels que :
+
+1. Virus : Un virus informatique est un logiciel malveillant qui s'attache à des fichiers ou des programmes existants et se propage en infectant d'autres fichiers lorsqu'ils sont exécutés.
+    
+2. Vers (worms) : Les vers sont des programmes autonomes qui se propagent sur les réseaux informatiques sans nécessiter l'intervention d'un utilisateur. Ils se répliquent et se transmettent d'un ordinateur à un autre en exploitant des vulnérabilités du système. (explique les faille du réseau pour se répliquer)
+	1. slammer (début année 2000)
+	2. codeRouge
+3. Chevaux de Troie (Trojans) : Les chevaux de Troie sont des programmes qui se font passer pour des logiciels légitimes, mais qui contiennent en réalité un code malveillant. Ils peuvent être utilisés pour voler des informations, ouvrir des portes dérobées, ou causer d'autres dommages à un système.
+    
+4. Ransomware : Les ransomwares sont des logiciels malveillants qui chiffrent les fichiers sur un système, empêchant ainsi l'accès à l'utilisateur. Les attaquants demandent ensuite une rançon pour restaurer l'accès aux fichiers.
+    
+5. Spyware : Les spywares sont des logiciels malveillants conçus pour surveiller et collecter des informations sur les activités d'un utilisateur, souvent à des fins de vol d'identité ou de suivi des habitudes de navigation.
+    
+6. Adware : Les adwares sont des logiciels malveillants qui affichent des publicités indésirables sur un système infecté, généralement dans le but de générer des revenus publicitaires pour les auteurs du logiciel.
+7. Botnet : Un réseau de machines infectées contrôlées à distance par un attaquant, souvent utilisé pour mener des attaques coordonnées, telles que des attaques par déni de service distribué (DDoS).
+    
+8. Keylogger : Un type de logiciel espion qui enregistre les frappes au clavier de l'utilisateur, permettant ainsi aux attaquants de collecter des informations sensibles telles que les mots de passe et les numéros de carte de crédit.
+    
+9. Rootkit : Un ensemble de programmes malveillants conçus pour dissimuler la présence d'autres logiciels malveillants ou l'activité malveillante sur le système infecté.
+    
+10. Hijacker de navigateur : Un malware qui modifie les paramètres du navigateur de l'utilisateur, tels que la page d'accueil et le moteur de recherche par défaut, afin de rediriger le trafic vers des sites malveillants ou d'afficher des publicités indésirables.
+
+Ces ne sont que quelques exemples parmi de nombreux autres types de malwares. Les logiciels malveillants peuvent être distribués via des e-mails, des téléchargements suspects, des sites web compromis ou d'autres méthodes. Il est essentiel de maintenir des logiciels antivirus et des systèmes à jour, d'être prudent lors de l'ouverture de pièces jointes ou du téléchargement de fichiers, et de faire preuve de vigilance en matière de sécurité pour se protéger contre les malwares.
+
+## Comportements des malwares courants 
+Un ordinateur infecté manifestera un ou plusieurs des symptômes suivants : 
+	• Apparition de fichiers, de programmes ou d'icônes du bureau anormaux 
+	• Désactivation des programmes antivirus et pare-feu, ou reconfiguration de leurs paramètres 
+	• Gel de l'écran ou défaillances du système 
+	• Envoi automatique d'e-mails à des personnes de votre liste de contacts 
+	• Modification ou suppression de fichiers 
+	• Utilisation accrue du CPU ou de la mémoire 
+	• Problèmes de connexion aux réseaux 
+	• Ordinateur ou navigateur web ralenti 
+	• Exécution de processus ou de services inconnus 
+	• Ports TCP ou UDP inconnus ouverts 
+	• Connexion à des hôtes sur Internet sans action de l'utilisateur 
+	• Comportement anormal de l'ordinateur
+
+Attaque de reconnaissance 
+• La reconnaissance est la collecte d'informations. 
+• Les acteurs de menace utilisent des attaques de reconnaissance pour effectuer la découverte et la cartographie non autorisées de systèmes, de services ou de vulnérabilités. 
+• Elles précèdent les attaques d'accès ou les attaques DoS.
+
+Whois est un protocole Internet largement utilisé pour obtenir des informations sur l'enregistrement d'un nom de domaine ou d'une adresse IP. Il fournit un moyen de consulter une base de données centralisée contenant des informations sur les propriétaires, les administrateurs, les serveurs de noms et les dates d'expiration des noms de domaine.
+
+Lorsque vous effectuez une requête Whois pour un nom de domaine spécifique, vous pouvez obtenir des détails tels que le nom du propriétaire, les coordonnées de contact, le fournisseur d'hébergement, les serveurs de noms, la date de création et d'expiration du nom de domaine, ainsi que d'autres informations pertinentes.
+
+Les informations Whois peuvent être utiles pour diverses raisons, notamment pour vérifier la disponibilité d'un nom de domaine, identifier le propriétaire d'un site web, résoudre des problèmes techniques liés à la configuration des noms de domaine, ou encore pour des enquêtes en matière de sécurité et de lutte contre les activités malveillantes en ligne.
+
+Il existe de nombreux sites web et outils en ligne qui permettent d'accéder à des services Whois gratuits ou payants pour obtenir ces informations.
+
+Un analyseur de trame, également appelé sniffer ou packet analyzer, est un outil logiciel ou matériel utilisé pour capturer, analyser et interpréter le trafic réseau. Il permet d'examiner les paquets de données qui circulent sur un réseau informatique afin de diagnostiquer les problèmes, de détecter les anomalies et d'effectuer des analyses détaillées du trafic.
+
+Voici quelques utilisations courantes d'un analyseur de trame :
+
+1. Dépannage du réseau : Un analyseur de trame peut être utilisé pour identifier les problèmes de connectivité, les goulots d'étranglement, les erreurs de configuration et les dysfonctionnements du réseau. Il permet de visualiser le trafic en temps réel et de repérer les paquets perdus, les retards excessifs ou les erreurs de transmission.
+
+2. Détection d'intrusion : En analysant le trafic réseau, un analyseur de trame peut aider à détecter les activités suspectes, les attaques de sécurité ou les tentatives d'intrusion. Il peut identifier les schémas de trafic malveillant, les anomalies de comportement ou les signes de compromission du réseau.
+
+3. Analyse des performances : En examinant les paquets de données, un analyseur de trame peut fournir des informations détaillées sur les performances du réseau, telles que la bande passante utilisée, les temps de réponse, les variations de latence et les problèmes de congestion. Cela permet aux administrateurs réseau d'optimiser les performances et de résoudre les problèmes de performance.
+
+4. Analyse de sécurité : Un analyseur de trame peut aider à l'analyse des vulnérabilités, à l'inspection des paquets et à l'identification des attaques potentielles. Il peut également aider à la surveillance du trafic chiffré pour détecter les tentatives de compromission ou d'exfiltration de données sensibles.
+
+5. Développement et débogage d'applications : Un analyseur de trame peut être utilisé lors du développement ou du débogage d'applications réseau pour examiner les échanges de données entre les différents composants d'un système distribué. Cela peut aider à identifier les erreurs de communication, les problèmes de protocole ou les incompatibilités.
+
+Il existe de nombreux outils d'analyse de trame disponibles, à la fois commerciaux et open source, tels que Wireshark, tcpdump, Microsoft Network Monitor, et bien d'autres. Ces outils offrent des fonctionnalités avancées pour capturer, filtrer et analyser les paquets de données afin de mieux comprendre le fonctionnement du réseau et de résoudre les problèmes qui y sont associés.
+
+![[Pasted image 20230601192133.png]]
+![[Pasted image 20230601192240.png]]
+Le contrôle portera sur le SOC et ses métiers, le SIEM, se rappeler des différence entre virus, vers skyware...., PHI/KII/PII... comment fonctionne les attaques : débordement de tampon, deni de service..... les possibilité d'attaque par conviction, ou vole de donnée (discret ou afficher ses conviction), ce que c'est un choice (domaine), rootkit, a quoi sert unanalyseur de trame, ce que on peut en faire, quel gueule ca a....
